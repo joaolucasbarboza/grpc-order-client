@@ -16,5 +16,7 @@ message OrderRequest {
 }
 
 message OrderResponse {
-  string status = 1;
+  string id = 1;
+  string product = 2;
+  int32 quantity = 3;
 }
