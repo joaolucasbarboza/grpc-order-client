@@ -1,13 +1,10 @@
 package br.edu.fema.order_client.dto;
 
 public record OrderResponseDto(
-        String id,
+        String productName,
         String status,
         String estimatedDeliveryDate,
-        String trackingCode,
         String createdAt,
-        String paymentMethod,
-        String cardBrand,
-        int instalments
+        PaymentDto payment
 ) {
 }
